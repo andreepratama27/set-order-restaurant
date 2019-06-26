@@ -1,9 +1,11 @@
 import { StyleSheet } from "react-native";
-import { Spacing, Colors } from "styles";
+import { Colors } from "styles";
 
 export default StyleSheet.create({
   container: {
     flex: 1,
+    flexDirection: "column",
+    justifyContent: "space-between",
     backgroundColor: Colors.smoke
   },
   btnWrapper: {

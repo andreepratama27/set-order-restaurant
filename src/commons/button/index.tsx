@@ -4,10 +4,15 @@ import styled from "styled-components/native";
 
 import { Colors } from "styles";
 
-export const Primary = styled.TouchableOpacity`
+type ButtonProps = {
+  bgColor: "string";
+};
+
+export const Button = styled.TouchableOpacity`
   height: 40px;
   border-radius: 4px;
-  background-color: ${Colors.warning};
+  background-color: ${(props: ButtonProps) =>
+    props.bgColor ? props.bgColor : Colors.light}
   align-items: center;
   justify-content: center;
 `;

@@ -7,22 +7,29 @@ import { Input } from "commons/input";
 import { Colors } from "styles";
 import styles from "./styles";
 
-function Signin() {
+function Join() {
   return (
     <View style={styles.container}>
-      <View style={styles.inputWrapper}>
-        <Input placeholder="Email" />
-        <Input placeholder="Password" noBorder />
+      <View>
+        <View style={styles.inputWrapper}>
+          <Input placeholder="Restaurant name" />
+          <Input placeholder="Restaurant webiste" noBorder />
+        </View>
+
+        <View style={styles.inputWrapper}>
+          <Input placeholder="Contact Name" />
+          <Input placeholder="Email" />
+          <Input placeholder="Password" noBorder />
+        </View>
       </View>
 
       <View style={styles.btnWrapper}>
         <Button bgColor={Colors.warning}>
-          <Title isBold>Sign In</Title>
+          <Title isBold>Send Request</Title>
         </Button>
-        <Text style={styles.forgotPwd}>Forgot your password</Text>
       </View>
     </View>
   );
 }
 
-export default Signin;
+export default Join;

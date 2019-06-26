@@ -27,26 +27,26 @@ function EditRestaurant(props: any) {
           <TextInput placeholder="Input Name" style={styles.textInput} />
         </Column>
         <Column isColumn style={styles.formInput}>
-          <P style={styles.label}>Email</P>
+          <Title style={styles.label}>Email</Title>
           <TextInput placeholder="Input Name" style={styles.textInput} />
         </Column>
         <Column isColumn style={styles.formInput}>
-          <P style={styles.label}>Phone number</P>
+          <Title style={styles.label}>Phone number</Title>
           <TextInput placeholder="Input Name" style={styles.textInput} />
         </Column>
         <Column isColumn style={styles.formInput}>
-          <P style={styles.label}>Website</P>
+          <Title style={styles.label}>Website</Title>
           <TextInput placeholder="Input Name" style={styles.textInput} />
         </Column>
         <Column isColumn style={styles.formInput}>
-          <P style={styles.label}>Contact Name</P>
+          <Title style={styles.label}>Contact Name</Title>
           <TextInput placeholder="Input Name" style={styles.textInput} />
         </Column>
         <Column isColumn style={styles.formInput}>
           <TouchableOpacity
             onPress={() => props.navigation.navigate("Location")}
           >
-            <P style={styles.label}>Location</P>
+            <Title style={styles.label}>Location</Title>
           </TouchableOpacity>
         </Column>
       </View>

@@ -18,10 +18,10 @@ const ModalConfig = createStackNavigator(
   },
   {
     initialRouteName: "Location",
-    mode: "modal",
     navigationOptions: {
       header: null
-    }
+    },
+    mode: "modal"
   }
 );
 
@@ -42,17 +42,17 @@ const TabConfig = createBottomTabNavigator(
       })
     },
     Settings: {
-      screen: createStackNavigator(
-        {
-          Settings: {
-            screen: Settings
-          },
-          Edit: {
-            screen: EditRestaurant
-          }
+      screen: createStackNavigator({
+        Settings: {
+          screen: Settings
         },
-        {}
-      )
+        Edit: {
+          screen: EditRestaurant,
+          navigationOptions: {
+            mode: "modal"
+          }
+        }
+      })
     }
   },
   {
