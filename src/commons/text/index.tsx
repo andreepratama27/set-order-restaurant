@@ -12,14 +12,14 @@ type TextProps = {
 
 export const Title = styled.Text`
   font-size: 14px;
-  font-family: "Roboto-Regular";
+  font-family: "SFUIText-Regular";
   color: ${(props: TextProps) => (props.isWhite ? Colors.light : Colors.dark)};
   font-weight: ${(props: TextProps) => (props.isBold ? "bold" : "normal")};
 `;
 
 export const Caption = styled.Text`
   font-size: 12px;
-  font-family: "Roboto-Regular";
+  font-family: "Roboto-Light";
 `;
 
 export const P = styled.Text`

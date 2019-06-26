@@ -7,8 +7,25 @@ import {
 import Orders from "modules/orders";
 import History from "modules/history";
 import Settings from "modules/settings";
+import EditRestaurant from "modules/edit-restaurant";
+import Location from "modules/location";
 
-const AuthNavigator = createBottomTabNavigator(
+const ModalConfig = createStackNavigator(
+  {
+    Location: {
+      screen: Location
+    }
+  },
+  {
+    initialRouteName: "Location",
+    mode: "modal",
+    navigationOptions: {
+      header: null
+    }
+  }
+);
+
+const TabConfig = createBottomTabNavigator(
   {
     Orders: {
       screen: createStackNavigator({
@@ -25,15 +42,37 @@ const AuthNavigator = createBottomTabNavigator(
       })
     },
     Settings: {
-      screen: createStackNavigator({
-        Settings: {
-          screen: Settings
-        }
-      })
+      screen: createStackNavigator(
+        {
+          Settings: {
+            screen: Settings
+          },
+          Edit: {
+            screen: EditRestaurant
+          }
+        },
+        {}
+      )
     }
   },
   {
-    initialRouteName: "Orders"
+    initialRouteName: "Orders",
+    navigationOptions: {
+      header: null
+    }
+  }
+);
+
+const AuthNavigator = createStackNavigator(
+  {
+    Root: TabConfig,
+    Modal: ModalConfig
+  },
+  {
+    initialRouteName: "Root",
+    navigationOptions: {
+      header: null
+    }
   }
 );
 

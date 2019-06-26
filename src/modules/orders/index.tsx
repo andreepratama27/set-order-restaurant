@@ -3,30 +3,11 @@ import { View, Text, StyleSheet } from "react-native";
 import styled from "styled-components/native";
 import { Colors } from "styles";
 
+import { Divider, List, Column } from "commons/ui";
+
 import { Title, P } from "commons/text";
 
 type OrderProps = {};
-
-const Divider = styled.View`
-  height: 40px;
-  justify-content: center;
-  background-color: ${Colors.smoke};
-  padding-left: 15px;
-`;
-
-const Column = styled.View`
-  flex-direction: row;
-  justify-content: ${props =>
-    props.spaceBetween ? "space-between" : "flex-start"};
-`;
-
-const List = styled.View`
-  background-color: ${Colors.light};
-  height: 60px;
-  justify-content: center;
-  padding-left: 15px;
-  padding-right: 15px;
-`;
 
 function Orders(props: OrderProps) {
   return (

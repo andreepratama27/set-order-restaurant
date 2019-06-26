@@ -5,7 +5,6 @@
 	};
 	objectVersion = 46;
 	objects = {
-
 /* Begin PBXBuildFile section */
 		00C302E51ABCBA2D00DB3ED1 /* libRCTActionSheet.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C302AC1ABCB8CE00DB3ED1 /* libRCTActionSheet.a */; };
 		00C302E71ABCBA2D00DB3ED1 /* libRCTGeolocation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C302BA1ABCB90400DB3ED1 /* libRCTGeolocation.a */; };
@@ -56,6 +55,43 @@
 		E78292C887F441D2B71EB69E /* Roboto-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7D347C379B8B4DFC909DB16C /* Roboto-Regular.ttf */; };
 		ED297163215061F000B7C4FE /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED297162215061F000B7C4FE /* JavaScriptCore.framework */; };
 		ED2971652150620600B7C4FE /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED2971642150620600B7C4FE /* JavaScriptCore.framework */; };
+		F9066E401782404A932688A4 /* SF-UI-Display-Thin.otf in Resources */ = {isa = PBXBuildFile; fileRef = 74B27359BFAE4A44A933581F /* SF-UI-Display-Thin.otf */; };
+		032156C4B75C4C0AA6A2454F /* SFUIText-Bold 2.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A4989408873E4FE68AE0291E /* SFUIText-Bold 2.ttf */; };
+		C88D0DCEF0B64E31BDCA81EF /* SFUIText-Bold 3.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EB3C7B26130C46EDA5DCCB5B /* SFUIText-Bold 3.ttf */; };
+		311A609C96FF4D2B92DE29D3 /* SFUIText-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3FD7DFD879B443C8AD8C7C3C /* SFUIText-Bold.ttf */; };
+		AF699F8B2ABE4FC6B7E9DC7C /* SFUIText-BoldItalic 2.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4C9B84A9FAA24178A5317541 /* SFUIText-BoldItalic 2.ttf */; };
+		54A0BB2B21E14B38B2392173 /* SFUIText-BoldItalic 3.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9931F3D6C7524C488CF4F7F6 /* SFUIText-BoldItalic 3.ttf */; };
+		FF63F85CF70D4E1FAF60B209 /* SFUIText-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 368C306947784477B2DDD961 /* SFUIText-BoldItalic.ttf */; };
+		1D24C260BD634309909E1F3E /* SFUIText-Heavy 2.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 81CB0A5CB6A44831BE3C4203 /* SFUIText-Heavy 2.ttf */; };
+		ABC138954C284FCFAC38002D /* SFUIText-Heavy 3.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 79AD9D48C5D44D6EB18EC8B9 /* SFUIText-Heavy 3.ttf */; };
+		976BC9CFC21C438CB110CE3A /* SFUIText-Heavy.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3291AC2F9A6B4D92B06B0069 /* SFUIText-Heavy.ttf */; };
+		5B57C7737313452F8575F46E /* SFUIText-HeavyItalic 2.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2D68B92A6A33436A8CF583B0 /* SFUIText-HeavyItalic 2.ttf */; };
+		4B2249F9DF6B42338BB5D852 /* SFUIText-HeavyItalic 3.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B1DAFDDAD65942DB9A984984 /* SFUIText-HeavyItalic 3.ttf */; };
+		E29E5ABBD4ED47BEA772856E /* SFUIText-HeavyItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1A0C344AF6E84A289A10D1D6 /* SFUIText-HeavyItalic.ttf */; };
+		58270C833AFF4D3A8CF145E9 /* SFUIText-Light 2.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 770BD9DB8E6447AB95E910B6 /* SFUIText-Light 2.ttf */; };
+		5348ACCFA25F46ED80E950EB /* SFUIText-Light 3.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A75397CCDD4D43CABB229842 /* SFUIText-Light 3.ttf */; };
+		0544930C32A842568AC32EEE /* SFUIText-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 38AF0259D9E747C4BB0D184C /* SFUIText-Light.ttf */; };
+		07012903D3004AF9A4D8B806 /* SFUIText-LightItalic 2.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 89DFD53A31AD45DE8D4E33D9 /* SFUIText-LightItalic 2.ttf */; };
+		8FA709950CCF4DC0A3E1A17C /* SFUIText-LightItalic 3.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4EE7C63CCA20470FACACF40D /* SFUIText-LightItalic 3.ttf */; };
+		D3DB9C1D31C6466DB7E61B0C /* SFUIText-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 458C89AF2A974921AF971421 /* SFUIText-LightItalic.ttf */; };
+		B6FEB4DF0FA84D8EB9197486 /* SFUIText-Medium 2.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 70462105518644F085CA5468 /* SFUIText-Medium 2.ttf */; };
+		3383BC197A7042C9A0EFF314 /* SFUIText-Medium 3.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 205D819771774E388DF10917 /* SFUIText-Medium 3.ttf */; };
+		EEB790CD90C4499D92E7AA1B /* SFUIText-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0AEAAE284B9D41398296BAC8 /* SFUIText-Medium.ttf */; };
+		D19D3E180C384C369B4245DF /* SFUIText-MediumItalic 2.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4B241135CDFC42D19557EB23 /* SFUIText-MediumItalic 2.ttf */; };
+		CB666DEF57FD44789CB4DAE0 /* SFUIText-MediumItalic 3.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C5B165CA755C462D95733387 /* SFUIText-MediumItalic 3.ttf */; };
+		0D1807094117422BBA96CE49 /* SFUIText-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5BF7DF65CDCB41F092054A8E /* SFUIText-MediumItalic.ttf */; };
+		89B1C326C0CF45FF9F1B6D47 /* SFUIText-Regular 2.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EE95CC81D54948589DCEB72B /* SFUIText-Regular 2.ttf */; };
+		12D64D9E6ED24C82BDDDE0B0 /* SFUIText-Regular 3.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BD1FBAEF68634A94AE0BC5DC /* SFUIText-Regular 3.ttf */; };
+		2F528BB5E9084D7895380D56 /* SFUIText-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9A76638332D14E62B5ECE9C7 /* SFUIText-Regular.ttf */; };
+		929B325895574851BB1F665D /* SFUIText-RegularItalic 2.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2BC056D9E84B4DF5A1F8AE58 /* SFUIText-RegularItalic 2.ttf */; };
+		04E86EFB0FA24CDBAE60D0F5 /* SFUIText-RegularItalic 3.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A1B8589E470543E280FFAFBA /* SFUIText-RegularItalic 3.ttf */; };
+		D1BFA962478043759C1B7CD5 /* SFUIText-RegularItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D3BEF93475A6406C80D79C0D /* SFUIText-RegularItalic.ttf */; };
+		00CFEF001A03449BA5DB28AB /* SFUIText-Semibold 2.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2DB9DFCF212540E091F6F096 /* SFUIText-Semibold 2.ttf */; };
+		0E4B3FEE6D3B484783E39C54 /* SFUIText-Semibold 3.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 566AA4380D70428AB1343045 /* SFUIText-Semibold 3.ttf */; };
+		853D0AA113CE43E5A2A8475D /* SFUIText-Semibold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7A5D789F4FD743ACA38A1460 /* SFUIText-Semibold.ttf */; };
+		06BAE1CF05B848068A450044 /* SFUIText-SemiboldItalic 2.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1A03A0EE0FA3412382988859 /* SFUIText-SemiboldItalic 2.ttf */; };
+		1130B76212844720AF39A481 /* SFUIText-SemiboldItalic 3.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9E5086BB6EB9421DB0B1C524 /* SFUIText-SemiboldItalic 3.ttf */; };
+		D5CC450FC4A348669DEC199E /* SFUIText-SemiboldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A63BC2DE1E1540E991363F61 /* SFUIText-SemiboldItalic.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -440,6 +476,43 @@
 		ED2971642150620600B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS12.0.sdk/System/Library/Frameworks/JavaScriptCore.framework; sourceTree = DEVELOPER_DIR; };
 		F034049BCFF4448F8978D152 /* Rubik-Light.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Rubik-Light.ttf"; path = "../node_modules/@shoutem/ui/fonts/Rubik-Light.ttf"; sourceTree = "<group>"; };
 		F99A21894DC648F094030E8B /* Foundation.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Foundation.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Foundation.ttf"; sourceTree = "<group>"; };
+		74B27359BFAE4A44A933581F /* SF-UI-Display-Thin.otf */ = {isa = PBXFileReference; name = "SF-UI-Display-Thin.otf"; path = "../assets/fonts/SF-UI-Display-Thin.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		A4989408873E4FE68AE0291E /* SFUIText-Bold 2.ttf */ = {isa = PBXFileReference; name = "SFUIText-Bold 2.ttf"; path = "../assets/fonts/SFUIText-Bold 2.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		EB3C7B26130C46EDA5DCCB5B /* SFUIText-Bold 3.ttf */ = {isa = PBXFileReference; name = "SFUIText-Bold 3.ttf"; path = "../assets/fonts/SFUIText-Bold 3.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		3FD7DFD879B443C8AD8C7C3C /* SFUIText-Bold.ttf */ = {isa = PBXFileReference; name = "SFUIText-Bold.ttf"; path = "../assets/fonts/SFUIText-Bold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		4C9B84A9FAA24178A5317541 /* SFUIText-BoldItalic 2.ttf */ = {isa = PBXFileReference; name = "SFUIText-BoldItalic 2.ttf"; path = "../assets/fonts/SFUIText-BoldItalic 2.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		9931F3D6C7524C488CF4F7F6 /* SFUIText-BoldItalic 3.ttf */ = {isa = PBXFileReference; name = "SFUIText-BoldItalic 3.ttf"; path = "../assets/fonts/SFUIText-BoldItalic 3.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		368C306947784477B2DDD961 /* SFUIText-BoldItalic.ttf */ = {isa = PBXFileReference; name = "SFUIText-BoldItalic.ttf"; path = "../assets/fonts/SFUIText-BoldItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		81CB0A5CB6A44831BE3C4203 /* SFUIText-Heavy 2.ttf */ = {isa = PBXFileReference; name = "SFUIText-Heavy 2.ttf"; path = "../assets/fonts/SFUIText-Heavy 2.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		79AD9D48C5D44D6EB18EC8B9 /* SFUIText-Heavy 3.ttf */ = {isa = PBXFileReference; name = "SFUIText-Heavy 3.ttf"; path = "../assets/fonts/SFUIText-Heavy 3.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		3291AC2F9A6B4D92B06B0069 /* SFUIText-Heavy.ttf */ = {isa = PBXFileReference; name = "SFUIText-Heavy.ttf"; path = "../assets/fonts/SFUIText-Heavy.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		2D68B92A6A33436A8CF583B0 /* SFUIText-HeavyItalic 2.ttf */ = {isa = PBXFileReference; name = "SFUIText-HeavyItalic 2.ttf"; path = "../assets/fonts/SFUIText-HeavyItalic 2.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		B1DAFDDAD65942DB9A984984 /* SFUIText-HeavyItalic 3.ttf */ = {isa = PBXFileReference; name = "SFUIText-HeavyItalic 3.ttf"; path = "../assets/fonts/SFUIText-HeavyItalic 3.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		1A0C344AF6E84A289A10D1D6 /* SFUIText-HeavyItalic.ttf */ = {isa = PBXFileReference; name = "SFUIText-HeavyItalic.ttf"; path = "../assets/fonts/SFUIText-HeavyItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		770BD9DB8E6447AB95E910B6 /* SFUIText-Light 2.ttf */ = {isa = PBXFileReference; name = "SFUIText-Light 2.ttf"; path = "../assets/fonts/SFUIText-Light 2.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		A75397CCDD4D43CABB229842 /* SFUIText-Light 3.ttf */ = {isa = PBXFileReference; name = "SFUIText-Light 3.ttf"; path = "../assets/fonts/SFUIText-Light 3.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		38AF0259D9E747C4BB0D184C /* SFUIText-Light.ttf */ = {isa = PBXFileReference; name = "SFUIText-Light.ttf"; path = "../assets/fonts/SFUIText-Light.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		89DFD53A31AD45DE8D4E33D9 /* SFUIText-LightItalic 2.ttf */ = {isa = PBXFileReference; name = "SFUIText-LightItalic 2.ttf"; path = "../assets/fonts/SFUIText-LightItalic 2.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		4EE7C63CCA20470FACACF40D /* SFUIText-LightItalic 3.ttf */ = {isa = PBXFileReference; name = "SFUIText-LightItalic 3.ttf"; path = "../assets/fonts/SFUIText-LightItalic 3.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		458C89AF2A974921AF971421 /* SFUIText-LightItalic.ttf */ = {isa = PBXFileReference; name = "SFUIText-LightItalic.ttf"; path = "../assets/fonts/SFUIText-LightItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		70462105518644F085CA5468 /* SFUIText-Medium 2.ttf */ = {isa = PBXFileReference; name = "SFUIText-Medium 2.ttf"; path = "../assets/fonts/SFUIText-Medium 2.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		205D819771774E388DF10917 /* SFUIText-Medium 3.ttf */ = {isa = PBXFileReference; name = "SFUIText-Medium 3.ttf"; path = "../assets/fonts/SFUIText-Medium 3.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		0AEAAE284B9D41398296BAC8 /* SFUIText-Medium.ttf */ = {isa = PBXFileReference; name = "SFUIText-Medium.ttf"; path = "../assets/fonts/SFUIText-Medium.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		4B241135CDFC42D19557EB23 /* SFUIText-MediumItalic 2.ttf */ = {isa = PBXFileReference; name = "SFUIText-MediumItalic 2.ttf"; path = "../assets/fonts/SFUIText-MediumItalic 2.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		C5B165CA755C462D95733387 /* SFUIText-MediumItalic 3.ttf */ = {isa = PBXFileReference; name = "SFUIText-MediumItalic 3.ttf"; path = "../assets/fonts/SFUIText-MediumItalic 3.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		5BF7DF65CDCB41F092054A8E /* SFUIText-MediumItalic.ttf */ = {isa = PBXFileReference; name = "SFUIText-MediumItalic.ttf"; path = "../assets/fonts/SFUIText-MediumItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		EE95CC81D54948589DCEB72B /* SFUIText-Regular 2.ttf */ = {isa = PBXFileReference; name = "SFUIText-Regular 2.ttf"; path = "../assets/fonts/SFUIText-Regular 2.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		BD1FBAEF68634A94AE0BC5DC /* SFUIText-Regular 3.ttf */ = {isa = PBXFileReference; name = "SFUIText-Regular 3.ttf"; path = "../assets/fonts/SFUIText-Regular 3.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		9A76638332D14E62B5ECE9C7 /* SFUIText-Regular.ttf */ = {isa = PBXFileReference; name = "SFUIText-Regular.ttf"; path = "../assets/fonts/SFUIText-Regular.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		2BC056D9E84B4DF5A1F8AE58 /* SFUIText-RegularItalic 2.ttf */ = {isa = PBXFileReference; name = "SFUIText-RegularItalic 2.ttf"; path = "../assets/fonts/SFUIText-RegularItalic 2.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		A1B8589E470543E280FFAFBA /* SFUIText-RegularItalic 3.ttf */ = {isa = PBXFileReference; name = "SFUIText-RegularItalic 3.ttf"; path = "../assets/fonts/SFUIText-RegularItalic 3.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		D3BEF93475A6406C80D79C0D /* SFUIText-RegularItalic.ttf */ = {isa = PBXFileReference; name = "SFUIText-RegularItalic.ttf"; path = "../assets/fonts/SFUIText-RegularItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		2DB9DFCF212540E091F6F096 /* SFUIText-Semibold 2.ttf */ = {isa = PBXFileReference; name = "SFUIText-Semibold 2.ttf"; path = "../assets/fonts/SFUIText-Semibold 2.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		566AA4380D70428AB1343045 /* SFUIText-Semibold 3.ttf */ = {isa = PBXFileReference; name = "SFUIText-Semibold 3.ttf"; path = "../assets/fonts/SFUIText-Semibold 3.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		7A5D789F4FD743ACA38A1460 /* SFUIText-Semibold.ttf */ = {isa = PBXFileReference; name = "SFUIText-Semibold.ttf"; path = "../assets/fonts/SFUIText-Semibold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		1A03A0EE0FA3412382988859 /* SFUIText-SemiboldItalic 2.ttf */ = {isa = PBXFileReference; name = "SFUIText-SemiboldItalic 2.ttf"; path = "../assets/fonts/SFUIText-SemiboldItalic 2.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		9E5086BB6EB9421DB0B1C524 /* SFUIText-SemiboldItalic 3.ttf */ = {isa = PBXFileReference; name = "SFUIText-SemiboldItalic 3.ttf"; path = "../assets/fonts/SFUIText-SemiboldItalic 3.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		A63BC2DE1E1540E991363F61 /* SFUIText-SemiboldItalic.ttf */ = {isa = PBXFileReference; name = "SFUIText-SemiboldItalic.ttf"; path = "../assets/fonts/SFUIText-SemiboldItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -749,6 +822,43 @@
 				7D347C379B8B4DFC909DB16C /* Roboto-Regular.ttf */,
 				E3CBA21287E546BABE7742F5 /* Roboto-Thin.ttf */,
 				E0823AEF4A5D41C197571760 /* Roboto-ThinItalic.ttf */,
+				74B27359BFAE4A44A933581F /* SF-UI-Display-Thin.otf */,
+				A4989408873E4FE68AE0291E /* SFUIText-Bold 2.ttf */,
+				EB3C7B26130C46EDA5DCCB5B /* SFUIText-Bold 3.ttf */,
+				3FD7DFD879B443C8AD8C7C3C /* SFUIText-Bold.ttf */,
+				4C9B84A9FAA24178A5317541 /* SFUIText-BoldItalic 2.ttf */,
+				9931F3D6C7524C488CF4F7F6 /* SFUIText-BoldItalic 3.ttf */,
+				368C306947784477B2DDD961 /* SFUIText-BoldItalic.ttf */,
+				81CB0A5CB6A44831BE3C4203 /* SFUIText-Heavy 2.ttf */,
+				79AD9D48C5D44D6EB18EC8B9 /* SFUIText-Heavy 3.ttf */,
+				3291AC2F9A6B4D92B06B0069 /* SFUIText-Heavy.ttf */,
+				2D68B92A6A33436A8CF583B0 /* SFUIText-HeavyItalic 2.ttf */,
+				B1DAFDDAD65942DB9A984984 /* SFUIText-HeavyItalic 3.ttf */,
+				1A0C344AF6E84A289A10D1D6 /* SFUIText-HeavyItalic.ttf */,
+				770BD9DB8E6447AB95E910B6 /* SFUIText-Light 2.ttf */,
+				A75397CCDD4D43CABB229842 /* SFUIText-Light 3.ttf */,
+				38AF0259D9E747C4BB0D184C /* SFUIText-Light.ttf */,
+				89DFD53A31AD45DE8D4E33D9 /* SFUIText-LightItalic 2.ttf */,
+				4EE7C63CCA20470FACACF40D /* SFUIText-LightItalic 3.ttf */,
+				458C89AF2A974921AF971421 /* SFUIText-LightItalic.ttf */,
+				70462105518644F085CA5468 /* SFUIText-Medium 2.ttf */,
+				205D819771774E388DF10917 /* SFUIText-Medium 3.ttf */,
+				0AEAAE284B9D41398296BAC8 /* SFUIText-Medium.ttf */,
+				4B241135CDFC42D19557EB23 /* SFUIText-MediumItalic 2.ttf */,
+				C5B165CA755C462D95733387 /* SFUIText-MediumItalic 3.ttf */,
+				5BF7DF65CDCB41F092054A8E /* SFUIText-MediumItalic.ttf */,
+				EE95CC81D54948589DCEB72B /* SFUIText-Regular 2.ttf */,
+				BD1FBAEF68634A94AE0BC5DC /* SFUIText-Regular 3.ttf */,
+				9A76638332D14E62B5ECE9C7 /* SFUIText-Regular.ttf */,
+				2BC056D9E84B4DF5A1F8AE58 /* SFUIText-RegularItalic 2.ttf */,
+				A1B8589E470543E280FFAFBA /* SFUIText-RegularItalic 3.ttf */,
+				D3BEF93475A6406C80D79C0D /* SFUIText-RegularItalic.ttf */,
+				2DB9DFCF212540E091F6F096 /* SFUIText-Semibold 2.ttf */,
+				566AA4380D70428AB1343045 /* SFUIText-Semibold 3.ttf */,
+				7A5D789F4FD743ACA38A1460 /* SFUIText-Semibold.ttf */,
+				1A03A0EE0FA3412382988859 /* SFUIText-SemiboldItalic 2.ttf */,
+				9E5086BB6EB9421DB0B1C524 /* SFUIText-SemiboldItalic 3.ttf */,
+				A63BC2DE1E1540E991363F61 /* SFUIText-SemiboldItalic.ttf */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -1298,6 +1408,43 @@
 				E78292C887F441D2B71EB69E /* Roboto-Regular.ttf in Resources */,
 				23D59CCD8E214A16B5DDBB3F /* Roboto-Thin.ttf in Resources */,
 				443B68A25740475694EB2563 /* Roboto-ThinItalic.ttf in Resources */,
+				F9066E401782404A932688A4 /* SF-UI-Display-Thin.otf in Resources */,
+				032156C4B75C4C0AA6A2454F /* SFUIText-Bold 2.ttf in Resources */,
+				C88D0DCEF0B64E31BDCA81EF /* SFUIText-Bold 3.ttf in Resources */,
+				311A609C96FF4D2B92DE29D3 /* SFUIText-Bold.ttf in Resources */,
+				AF699F8B2ABE4FC6B7E9DC7C /* SFUIText-BoldItalic 2.ttf in Resources */,
+				54A0BB2B21E14B38B2392173 /* SFUIText-BoldItalic 3.ttf in Resources */,
+				FF63F85CF70D4E1FAF60B209 /* SFUIText-BoldItalic.ttf in Resources */,
+				1D24C260BD634309909E1F3E /* SFUIText-Heavy 2.ttf in Resources */,
+				ABC138954C284FCFAC38002D /* SFUIText-Heavy 3.ttf in Resources */,
+				976BC9CFC21C438CB110CE3A /* SFUIText-Heavy.ttf in Resources */,
+				5B57C7737313452F8575F46E /* SFUIText-HeavyItalic 2.ttf in Resources */,
+				4B2249F9DF6B42338BB5D852 /* SFUIText-HeavyItalic 3.ttf in Resources */,
+				E29E5ABBD4ED47BEA772856E /* SFUIText-HeavyItalic.ttf in Resources */,
+				58270C833AFF4D3A8CF145E9 /* SFUIText-Light 2.ttf in Resources */,
+				5348ACCFA25F46ED80E950EB /* SFUIText-Light 3.ttf in Resources */,
+				0544930C32A842568AC32EEE /* SFUIText-Light.ttf in Resources */,
+				07012903D3004AF9A4D8B806 /* SFUIText-LightItalic 2.ttf in Resources */,
+				8FA709950CCF4DC0A3E1A17C /* SFUIText-LightItalic 3.ttf in Resources */,
+				D3DB9C1D31C6466DB7E61B0C /* SFUIText-LightItalic.ttf in Resources */,
+				B6FEB4DF0FA84D8EB9197486 /* SFUIText-Medium 2.ttf in Resources */,
+				3383BC197A7042C9A0EFF314 /* SFUIText-Medium 3.ttf in Resources */,
+				EEB790CD90C4499D92E7AA1B /* SFUIText-Medium.ttf in Resources */,
+				D19D3E180C384C369B4245DF /* SFUIText-MediumItalic 2.ttf in Resources */,
+				CB666DEF57FD44789CB4DAE0 /* SFUIText-MediumItalic 3.ttf in Resources */,
+				0D1807094117422BBA96CE49 /* SFUIText-MediumItalic.ttf in Resources */,
+				89B1C326C0CF45FF9F1B6D47 /* SFUIText-Regular 2.ttf in Resources */,
+				12D64D9E6ED24C82BDDDE0B0 /* SFUIText-Regular 3.ttf in Resources */,
+				2F528BB5E9084D7895380D56 /* SFUIText-Regular.ttf in Resources */,
+				929B325895574851BB1F665D /* SFUIText-RegularItalic 2.ttf in Resources */,
+				04E86EFB0FA24CDBAE60D0F5 /* SFUIText-RegularItalic 3.ttf in Resources */,
+				D1BFA962478043759C1B7CD5 /* SFUIText-RegularItalic.ttf in Resources */,
+				00CFEF001A03449BA5DB28AB /* SFUIText-Semibold 2.ttf in Resources */,
+				0E4B3FEE6D3B484783E39C54 /* SFUIText-Semibold 3.ttf in Resources */,
+				853D0AA113CE43E5A2A8475D /* SFUIText-Semibold.ttf in Resources */,
+				06BAE1CF05B848068A450044 /* SFUIText-SemiboldItalic 2.ttf in Resources */,
+				1130B76212844720AF39A481 /* SFUIText-SemiboldItalic 3.ttf in Resources */,
+				D5CC450FC4A348669DEC199E /* SFUIText-SemiboldItalic.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
