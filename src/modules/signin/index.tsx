@@ -7,39 +7,32 @@ import {Input} from 'commons/input';
 import {Colors} from 'styles';
 import styles from './styles';
 
-function Join() {
+function Signin() {
   return (
     <View style={styles.container}>
-      <View>
-        <View style={styles.inputWrapper}>
-          <Input placeholder="Restaurant name" />
-          <Input placeholder="Restaurant webiste" noBorder />
-        </View>
-
-        <View style={styles.inputWrapper}>
-          <Input placeholder="Contact Name" />
-          <Input placeholder="Email" />
-          <Input placeholder="Password" noBorder />
-        </View>
+      <View style={styles.inputWrapper}>
+        <Input placeholder="Email" />
+        <Input placeholder="Password" noBorder />
       </View>
 
       <View style={styles.btnWrapper}>
         <Button bgColor={Colors.warning}>
-          <Title isBold>Send Request</Title>
+          <Title isBold>Sign In</Title>
         </Button>
+        <Text style={styles.forgotPwd}>Forgot your password</Text>
       </View>
     </View>
   );
 }
 
-Join.navigationOptions = {
+Signin.navigationOptions = {
   headerStyle: {
     elevation: 0,
     borderBottomWidth: 1,
     borderBottomColor: Colors.background,
   },
-  headerTitle: <TitleHeader>Join SetOrder</TitleHeader>,
+  headerTitle: <TitleHeader>Sign In</TitleHeader>,
   headerRight: <View />,
 };
 
-export default Join;
+export default Signin;

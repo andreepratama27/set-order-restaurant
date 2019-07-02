@@ -1,11 +1,11 @@
-import React from "react";
-import { View, Text, StyleSheet } from "react-native";
-import styled from "styled-components/native";
-import { Colors } from "styles";
+import React from 'react';
+import {View, Text, StyleSheet} from 'react-native';
+import styled from 'styled-components/native';
+import {Colors} from 'styles';
 
-import { Divider, List, Column } from "commons/ui";
+import {Divider, List, Column} from 'commons/ui';
 
-import { Title, TitleHeader, P } from "commons/text";
+import {Title, TitleHeader, P} from 'commons/text';
 
 type OrderProps = {};
 
@@ -13,19 +13,19 @@ function Orders(props: OrderProps) {
   return (
     <View style={styles.container}>
       <Divider>
-        <Title isBold>New Orders</Title>
+        <Title>New Orders</Title>
       </Divider>
 
       <List style={styles.list}>
         <Column spaceBetween>
-          <Title>Kenny Williams</Title>
+          <Title isSemibold>Kenny Williams</Title>
           <P>Now</P>
         </Column>
       </List>
 
       <List style={styles.list}>
         <Column spaceBetween>
-          <Title>Emilia Vu</Title>
+          <Title isSemibold>Emilia Vu</Title>
           <Column isColumn>
             <P>9:30 AM</P>
           </Column>
@@ -34,12 +34,12 @@ function Orders(props: OrderProps) {
       </List>
 
       <Divider>
-        <Title isBold>20 May 2019 (Wed)</Title>
+        <Title>20 May 2019 (Wed)</Title>
       </Divider>
 
       <List style={styles.list}>
         <Column spaceBetween>
-          <Title>Emilia Vu</Title>
+          <Title isSemibold>Emilia Vu</Title>
           <P>9:30 AM</P>
         </Column>
         <P>Wed, May 20, 2:30 AM, take away</P>
@@ -47,7 +47,7 @@ function Orders(props: OrderProps) {
 
       <List style={styles.list}>
         <Column spaceBetween alignItems="center">
-          <Title>Emilia Vu</Title>
+          <Title isSemibold>Emilia Vu</Title>
           <P>9:30 AM</P>
         </Column>
         <P>Wed, May 20, 2:30 AM, take away</P>
@@ -60,20 +60,20 @@ Orders.navigationOptions = {
   headerStyle: {
     elevation: 0,
     borderBottomWidth: 1,
-    borderBottomColor: Colors.background
+    borderBottomColor: Colors.background,
   },
-  headerTitle: <TitleHeader>Orders</TitleHeader>
+  headerTitle: <TitleHeader>Orders</TitleHeader>,
 };
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: Colors.smoke
+    backgroundColor: Colors.smoke,
   },
   list: {
     borderBottomWidth: 1,
-    borderBottomColor: Colors.background
-  }
+    borderBottomColor: Colors.background,
+  },
 });
 
 export default Orders;
