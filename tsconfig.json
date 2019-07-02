@@ -12,6 +12,7 @@
     "target": "esnext",
     "baseUrl": "src",
     "paths": {
+      "assets": ["assets/*"],
       "commons/*": ["commons/*"],
       "navigations/*": ["navigations/*"],
       "modules/*": ["modules/*"],

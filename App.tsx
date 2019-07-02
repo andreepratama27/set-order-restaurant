@@ -1,9 +1,10 @@
-import React, { Component } from "react";
-import AppNavigator from "./src/navigations/guest";
+import React, {Component} from 'react';
+import AuthNavigator from './src/navigations/auth';
+import GuestNavigator from './src/navigations/guest';
 
 interface Props {}
 export default class App extends Component<Props> {
   render() {
-    return <AppNavigator />;
+    return <AuthNavigator />;
   }
 }

@@ -10,7 +10,7 @@ import {
 import { Colors } from "styles";
 
 import { Column, List } from "commons/ui";
-import { Caption, P, Title } from "commons/text";
+import { Caption, P, Title, TitleHeader } from "commons/text";
 
 type EditRestaurantProps = {};
 
@@ -54,6 +54,16 @@ function EditRestaurant(props: any) {
   );
 }
 
+EditRestaurant.navigationOptions = {
+  headerTitle: <TitleHeader>Edit restaurant</TitleHeader>,
+  headerStyle: {
+    elevation: 0,
+    borderBottomWidth: 1,
+    borderBottomColor: Colors.background
+  },
+  headerRight: <View />
+};
+
 const styles = StyleSheet.create({
   container: {
     flex: 1
@@ -74,6 +84,7 @@ const styles = StyleSheet.create({
     marginBottom: 5
   },
   textInput: {
+    fontFamily: "SFUIText-Light",
     height: 40,
     borderBottomWidth: 1,
     borderBottomColor: Colors.smoke

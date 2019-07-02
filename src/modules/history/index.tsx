@@ -3,7 +3,7 @@ import { View, Text, StyleSheet } from "react-native";
 import { Colors } from "styles";
 
 import { Divider, List, Column, Spacing } from "commons/ui";
-import { Title, P, Caption } from "commons/text";
+import { Title, TitleHeader, P, Caption } from "commons/text";
 
 function History() {
   return (
@@ -72,9 +72,11 @@ const styles = StyleSheet.create({
 });
 
 History.navigationOptions = {
-  headerTitle: "History",
+  headerTitle: <TitleHeader>History</TitleHeader>,
   headerStyle: {
-    elevation: 0
+    elevation: 0,
+    borderBottomWidth: 1,
+    borderBottomColor: Colors.background
   }
 };
 

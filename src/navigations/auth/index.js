@@ -1,3 +1,4 @@
+import React from "react";
 import {
   createAppContainer,
   createBottomTabNavigator,
@@ -9,6 +10,10 @@ import History from "modules/history";
 import Settings from "modules/settings";
 import EditRestaurant from "modules/edit-restaurant";
 import Location from "modules/location";
+
+import ChangePassword from "modules/change-password";
+
+import BottomTab from "../BottomTab";
 
 const ModalConfig = createStackNavigator(
   {
@@ -42,24 +47,34 @@ const TabConfig = createBottomTabNavigator(
       })
     },
     Settings: {
-      screen: createStackNavigator({
-        Settings: {
-          screen: Settings
-        },
-        Edit: {
-          screen: EditRestaurant,
-          navigationOptions: {
-            mode: "modal"
+      screen: createStackNavigator(
+        {
+          Settings: {
+            screen: Settings
+          },
+          Edit: {
+            screen: EditRestaurant,
+            navigationOptions: {
+              mode: "modal"
+            }
+          },
+          ChangePassword: {
+            screen: ChangePassword
           }
-        }
-      })
+        },
+        {}
+      )
     }
   },
   {
     initialRouteName: "Orders",
     navigationOptions: {
       header: null
-    }
+    },
+    tabBarOptions: {
+      showLabel: false
+    },
+    tabBarComponent: props => <BottomTab {...props} />
   }
 );
 
