@@ -1,33 +1,33 @@
-import React from "react";
+import React from 'react';
 import {
   createAppContainer,
   createBottomTabNavigator,
-  createStackNavigator
-} from "react-navigation";
+  createStackNavigator,
+} from 'react-navigation';
 
-import Orders from "modules/orders";
-import History from "modules/history";
-import Settings from "modules/settings";
-import EditRestaurant from "modules/edit-restaurant";
-import Location from "modules/location";
+import Orders from 'modules/orders';
+import History from 'modules/history';
+import Settings from 'modules/settings';
+import EditRestaurant from 'modules/edit-restaurant';
+import Location from 'modules/location';
 
-import ChangePassword from "modules/change-password";
+import ChangePassword from 'modules/change-password';
 
-import BottomTab from "../BottomTab";
+import BottomTab from '../BottomTab';
 
 const ModalConfig = createStackNavigator(
   {
     Location: {
-      screen: Location
-    }
+      screen: Location,
+    },
   },
   {
-    initialRouteName: "Location",
+    initialRouteName: 'Location',
     navigationOptions: {
-      header: null
+      header: null,
     },
-    mode: "modal"
-  }
+    mode: 'modal',
+  },
 );
 
 const TabConfig = createBottomTabNavigator(
@@ -35,60 +35,60 @@ const TabConfig = createBottomTabNavigator(
     Orders: {
       screen: createStackNavigator({
         Orders: {
-          screen: Orders
-        }
-      })
+          screen: Orders,
+        },
+      }),
     },
     History: {
       screen: createStackNavigator({
         History: {
-          screen: History
-        }
-      })
+          screen: History,
+        },
+      }),
     },
     Settings: {
       screen: createStackNavigator(
         {
           Settings: {
-            screen: Settings
+            screen: Settings,
           },
           Edit: {
             screen: EditRestaurant,
             navigationOptions: {
-              mode: "modal"
-            }
+              mode: 'modal',
+            },
           },
           ChangePassword: {
-            screen: ChangePassword
-          }
+            screen: ChangePassword,
+          },
         },
-        {}
-      )
-    }
+        {},
+      ),
+    },
   },
   {
-    initialRouteName: "Orders",
+    initialRouteName: 'Orders',
     navigationOptions: {
-      header: null
+      header: null,
     },
     tabBarOptions: {
-      showLabel: false
+      showLabel: false,
     },
-    tabBarComponent: props => <BottomTab {...props} />
-  }
+    tabBarComponent: props => <BottomTab {...props} />,
+  },
 );
 
 const AuthNavigator = createStackNavigator(
   {
     Root: TabConfig,
-    Modal: ModalConfig
+    Modal: ModalConfig,
   },
   {
-    initialRouteName: "Root",
+    initialRouteName: 'Root',
     navigationOptions: {
-      header: null
-    }
-  }
+      header: null,
+    },
+  },
 );
 
 const AppNavigator = createAppContainer(AuthNavigator);

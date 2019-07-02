@@ -1,5 +1,5 @@
 import React from 'react';
-import {View, Text, StyleSheet} from 'react-native';
+import {View, Text, StyleSheet, Image} from 'react-native';
 import styled from 'styled-components/native';
 import {Colors} from 'styles';
 
@@ -9,6 +9,33 @@ import {Title, TitleHeader, P} from 'commons/text';
 
 type OrderProps = {};
 
+function ListBox(props: any) {
+  return (
+    <List style={styles.list}>
+      <Column alignItems="center">
+        <View style={styles.avatarWrapper}>
+          <Image
+            source={{
+              uri: `https://randomuser.me/api/portraits/men/${Math.floor(
+                Math.random() * 100,
+              )}.jpg`,
+            }}
+            style={styles.avatar}
+          />
+        </View>
+        <Column isColumn>
+          <Title isSemibold>Emilia Vu</Title>
+          <P>Wed, May 20, 2:30 AM, take away</P>
+        </Column>
+      </Column>
+
+      <Column>
+        <P>9:30 AM</P>
+      </Column>
+    </List>
+  );
+}
+
 function Orders(props: OrderProps) {
   return (
     <View style={styles.container}>
@@ -16,42 +43,14 @@ function Orders(props: OrderProps) {
         <Title>New Orders</Title>
       </Divider>
 
-      <List style={styles.list}>
-        <Column spaceBetween>
-          <Title isSemibold>Kenny Williams</Title>
-          <P>Now</P>
-        </Column>
-      </List>
-
-      <List style={styles.list}>
-        <Column spaceBetween>
-          <Title isSemibold>Emilia Vu</Title>
-          <Column isColumn>
-            <P>9:30 AM</P>
-          </Column>
-        </Column>
-        <P>Wed, May 20, 2:30 AM, take away</P>
-      </List>
-
+      <ListBox />
+      <ListBox />
       <Divider>
         <Title>20 May 2019 (Wed)</Title>
       </Divider>
 
-      <List style={styles.list}>
-        <Column spaceBetween>
-          <Title isSemibold>Emilia Vu</Title>
-          <P>9:30 AM</P>
-        </Column>
-        <P>Wed, May 20, 2:30 AM, take away</P>
-      </List>
-
-      <List style={styles.list}>
-        <Column spaceBetween alignItems="center">
-          <Title isSemibold>Emilia Vu</Title>
-          <P>9:30 AM</P>
-        </Column>
-        <P>Wed, May 20, 2:30 AM, take away</P>
-      </List>
+      <ListBox />
+      <ListBox />
     </View>
   );
 }
@@ -71,8 +70,21 @@ const styles = StyleSheet.create({
     backgroundColor: Colors.smoke,
   },
   list: {
+    flexDirection: 'row',
     borderBottomWidth: 1,
     borderBottomColor: Colors.background,
+  },
+  avatarWrapper: {
+    width: 40,
+    height: 40,
+    marginRight: 15,
+    borderRadius: 80,
+  },
+  avatar: {
+    borderRadius: 80,
+    width: '100%',
+    height: '100%',
+    resizeMode: 'contain',
   },
 });
 
