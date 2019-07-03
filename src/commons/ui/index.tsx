@@ -1,7 +1,7 @@
-import React from "react";
-import { TouchableOpacity } from "react-native";
-import styled from "styled-components/native";
-import { Colors } from "styles";
+import React from 'react';
+import {TouchableOpacity} from 'react-native';
+import styled from 'styled-components/native';
+import {Colors} from 'styles';
 
 export const Divider = styled.View`
   height: 40px;
@@ -11,9 +11,11 @@ export const Divider = styled.View`
 `;
 
 export const Column = styled.View`
-  flex-direction: ${(props: any) => (props.isColumn ? "column" : "row")};
+  flex-direction: ${(props: any) => (props.isColumn ? 'column' : 'row')};
   justify-content: ${(props: any) =>
-    props.spaceBetween ? "space-between" : "flex-start"};
+    props.justifyContent ? props.justifyContent : 'flex-start'};
+  align-items: ${(props: any) =>
+    props.alignItems ? props.alignItems : 'flex-start'};
 `;
 
 export const List = styled.TouchableOpacity`

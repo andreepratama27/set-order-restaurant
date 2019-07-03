@@ -6,6 +6,8 @@ import {
 } from 'react-navigation';
 
 import Orders from 'modules/orders';
+import OrderDetail from 'modules/order-detail';
+
 import History from 'modules/history';
 import Settings from 'modules/settings';
 import EditRestaurant from 'modules/edit-restaurant';
@@ -82,9 +84,12 @@ const AuthNavigator = createStackNavigator(
   {
     Root: TabConfig,
     Modal: ModalConfig,
+    OrderDetail: {
+      screen: OrderDetail,
+    },
   },
   {
-    initialRouteName: 'Root',
+    initialRouteName: 'OrderDetail',
     navigationOptions: {
       header: null,
     },
