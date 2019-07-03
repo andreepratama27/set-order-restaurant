@@ -1,13 +1,20 @@
 import React from 'react';
-import {View, StyleSheet, Image} from 'react-native';
+import {View, StyleSheet, Image, TouchableOpacity} from 'react-native';
+import {NavigationScreenProp} from 'react-navigation';
 
 import {Button} from 'commons/button';
 import {Column, List, Spacing} from 'commons/ui';
 import {Title, TitleHeader, Caption, P} from 'commons/text';
+import Icon from 'react-native-vector-icons/Ionicons';
 
 import {Colors} from 'styles';
+import styles from './styles';
 
-function OrderDetail(props) {
+type OrderDetailProps = {
+  navigation: NavigationScreenProp<any, any>;
+};
+
+function OrderDetail(props: OrderDetailProps) {
   return (
     <View style={styles.container}>
       <View style={styles.content}>
@@ -29,9 +36,10 @@ function OrderDetail(props) {
             </Column>
           </Column>
 
-          <Column>
-            <P>Info</P>
-          </Column>
+          <TouchableOpacity
+            onPress={() => props.navigation.navigate('ProfileDetail')}>
+            <Icon name="ios-information-circle" size={25} />
+          </TouchableOpacity>
         </List>
 
         <View style={styles.listWrapper}>
@@ -112,69 +120,34 @@ function OrderDetail(props) {
         </View>
       </View>
 
+      <Spacing marginTop={15} />
+
+      <Column
+        style={styles.notification}
+        isColumn
+        justifyContent="center"
+        alignItems="center">
+        <Title isBold size={12}>
+          Having issues with this order ?
+        </Title>
+        <View style={styles.notificationBadge}>
+          <Title size={12} color={Colors.info}>
+            Call SetOrder +61 4110385392
+          </Title>
+        </View>
+      </Column>
+
       <View style={styles.bottomWrapper}>
-        <Button bgColor={Colors.warning}>
+        <Button
+          bgColor={Colors.warning}
+          borderRadius={'0px'}
+          onPress={() => props.navigation.navigate('AcceptOrder')}>
           <Title isBold>Accept Order</Title>
         </Button>
       </View>
     </View>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: Colors.smoke,
-  },
-  content: {
-    backgroundColor: Colors.light,
-  },
-  list: {
-    flexDirection: 'row',
-    justifyContent: 'space-between',
-    alignItems: 'center',
-    borderBottomWidth: 1,
-    borderBottomColor: Colors.background,
-  },
-  avatarWrapper: {
-    width: 40,
-    height: 40,
-    marginRight: 15,
-    borderRadius: 80,
-  },
-  avatar: {
-    borderRadius: 80,
-    width: '100%',
-    height: '100%',
-    resizeMode: 'contain',
-  },
-
-  listWrapper: {
-    width: '100%',
-    padding: 15,
-    justifyContent: 'space-between',
-  },
-  menu: {
-    paddingTop: 15,
-    paddingBottom: 15,
-    borderBottomWidth: 1,
-    borderBottomColor: Colors.background,
-  },
-  fullWidth: {
-    width: '100%',
-  },
-  noBorder: {
-    borderBottomWidth: 0,
-  },
-  noPadding: {
-    paddingBottom: 0,
-  },
-  bottomWrapper: {
-    width: '100%',
-    position: 'absolute',
-    bottom: 0,
-  },
-});
 
 OrderDetail.navigationOptions = {
   headerTitle: <TitleHeader>Order details</TitleHeader>,
@@ -183,6 +156,7 @@ OrderDetail.navigationOptions = {
     borderBottomWidth: 1,
     borderBottomColor: Colors.background,
   },
+  headerRight: <View />,
 };
 
 export default OrderDetail;

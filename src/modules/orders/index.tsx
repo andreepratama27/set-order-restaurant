@@ -5,13 +5,15 @@ import {Colors} from 'styles';
 
 import {Divider, List, Column} from 'commons/ui';
 
-import {Title, TitleHeader, P} from 'commons/text';
+import {Title, TitleHeader, Caption, P} from 'commons/text';
 
 type OrderProps = {};
 
 function ListBox(props: any) {
   return (
-    <List style={styles.list}>
+    <List
+      style={styles.list}
+      onPress={() => props.navigation.navigate('OrderDetail')}>
       <Column alignItems="center">
         <View style={styles.avatarWrapper}>
           <Image
@@ -25,12 +27,12 @@ function ListBox(props: any) {
         </View>
         <Column isColumn>
           <Title isSemibold>Emilia Vu</Title>
-          <P>Wed, May 20, 2:30 AM, take away</P>
+          <Caption>Wed, May 20, 2:30 AM, take away</Caption>
         </Column>
       </Column>
 
-      <Column>
-        <P>9:30 AM</P>
+      <Column style={styles.dateTime}>
+        <Caption>9:30 AM</Caption>
       </Column>
     </List>
   );
@@ -43,14 +45,14 @@ function Orders(props: OrderProps) {
         <Title>New Orders</Title>
       </Divider>
 
-      <ListBox />
-      <ListBox />
+      <ListBox {...props} />
+      <ListBox {...props} />
       <Divider>
         <Title>20 May 2019 (Wed)</Title>
       </Divider>
 
-      <ListBox />
-      <ListBox />
+      <ListBox {...props} />
+      <ListBox {...props} />
     </View>
   );
 }
@@ -71,6 +73,7 @@ const styles = StyleSheet.create({
   },
   list: {
     flexDirection: 'row',
+    justifyContent: 'space-between',
     borderBottomWidth: 1,
     borderBottomColor: Colors.background,
   },
@@ -85,6 +88,9 @@ const styles = StyleSheet.create({
     width: '100%',
     height: '100%',
     resizeMode: 'contain',
+  },
+  dateTime: {
+    paddingTop: 15,
   },
 });
 

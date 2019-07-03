@@ -7,6 +7,7 @@ import {
 
 import Orders from 'modules/orders';
 import OrderDetail from 'modules/order-detail';
+import ProfileDetail from 'modules/profile-detail';
 
 import History from 'modules/history';
 import Settings from 'modules/settings';
@@ -14,6 +15,7 @@ import EditRestaurant from 'modules/edit-restaurant';
 import Location from 'modules/location';
 
 import ChangePassword from 'modules/change-password';
+import AcceptOrder from 'modules/accept-order';
 
 import BottomTab from '../BottomTab';
 
@@ -56,9 +58,6 @@ const TabConfig = createBottomTabNavigator(
           },
           Edit: {
             screen: EditRestaurant,
-            navigationOptions: {
-              mode: 'modal',
-            },
           },
           ChangePassword: {
             screen: ChangePassword,
@@ -87,9 +86,15 @@ const AuthNavigator = createStackNavigator(
     OrderDetail: {
       screen: OrderDetail,
     },
+    ProfileDetail: {
+      screen: ProfileDetail,
+    },
+    AcceptOrder: {
+      screen: AcceptOrder,
+    },
   },
   {
-    initialRouteName: 'OrderDetail',
+    initialRouteName: 'Root',
     navigationOptions: {
       header: null,
     },

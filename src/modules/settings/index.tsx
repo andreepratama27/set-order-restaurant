@@ -1,16 +1,16 @@
-import React from "react";
-import { View, Switch } from "react-native";
-import { ScaledSheet } from "react-native-size-matters";
-import { Colors } from "styles";
+import React from 'react';
+import {View, Switch} from 'react-native';
+import {ScaledSheet} from 'react-native-size-matters';
+import {Colors} from 'styles';
 
-import { Divider, List, Column, Spacing } from "commons/ui";
-import { Title, TitleHeader, P, Caption } from "commons/text";
+import {Divider, List, Column, Spacing} from 'commons/ui';
+import {Title, TitleHeader, P, Caption} from 'commons/text';
 
 function Settings(props: any) {
   return (
     <View style={styles.container}>
-      <List onPress={() => props.navigation.navigate("Edit")}>
-        <Column spaceBetween>
+      <List onPress={() => props.navigation.navigate('Edit')}>
+        <Column justifyContent="space-between">
           <Column isColumn>
             <Title isBold>Starbucks Coffee</Title>
             <Spacing marginTop={5} />
@@ -27,8 +27,7 @@ function Settings(props: any) {
 
       <List
         style={styles.list}
-        onPress={() => props.navigation.navigate("ChangePassword")}
-      >
+        onPress={() => props.navigation.navigate('ChangePassword')}>
         <Column spaceBetween>
           <Column isColumn>
             <Title>Change Password</Title>
@@ -36,7 +35,7 @@ function Settings(props: any) {
         </Column>
       </List>
       <List style={styles.list}>
-        <Column spaceBetween alignItems="center">
+        <Column justifyContent="space-between" alignItems="center">
           <Title>Notification</Title>
 
           <Switch />
@@ -77,13 +76,13 @@ function Settings(props: any) {
 const styles = ScaledSheet.create({
   container: {
     flex: 1,
-    backgroundColor: Colors.smoke
+    backgroundColor: Colors.smoke,
   },
   list: {
     borderBottomWidth: 1,
     borderBottomColor: Colors.background,
-    height: "50@vs"
-  }
+    height: '50@vs',
+  },
 });
 
 Settings.navigationOptions = {
@@ -91,8 +90,8 @@ Settings.navigationOptions = {
   headerStyle: {
     elevation: 0,
     borderBottomWidth: 1,
-    borderBottomColor: Colors.background
-  }
+    borderBottomColor: Colors.background,
+  },
 };
 
 export default Settings;

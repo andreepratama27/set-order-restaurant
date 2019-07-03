@@ -1,16 +1,18 @@
-import React from "react";
-import { TouchableOpacity, StyleSheet } from "react-native";
-import styled from "styled-components/native";
+import React from 'react';
+import {TouchableOpacity, StyleSheet} from 'react-native';
+import styled from 'styled-components/native';
 
-import { Colors } from "styles";
+import {Colors} from 'styles';
 
 type ButtonProps = {
-  bgColor: "string";
+  bgColor: 'string';
+  borderRadius: 'string';
 };
 
 export const Button = styled.TouchableOpacity`
-  height: 40px;
-  border-radius: 4px;
+  height: 50px;
+  border-radius: ${(props: ButtonProps) =>
+    props.borderRadius ? props.borderRadius : '4px'};
   background-color: ${(props: ButtonProps) =>
     props.bgColor ? props.bgColor : Colors.light}
   align-items: center;
