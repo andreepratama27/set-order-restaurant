@@ -16,7 +16,8 @@
       "commons/*": ["commons/*"],
       "navigations/*": ["navigations/*"],
       "modules/*": ["modules/*"],
-      "styles/*": ["styles/*"]
+      "styles/*": ["styles/*"],
+      "redux/*": ["redux/*"]
     }
   },
   "exclude": [
